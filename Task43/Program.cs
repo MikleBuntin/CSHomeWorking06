@@ -47,7 +47,7 @@ matrix[1, 1] = 1;
 
 
 
-int delta0 = DeltaMatrix(matrix);
+double delta0 = DeltaMatrix(matrix);
 
 PrintArray(matrix);
 Console.WriteLine($"d0 = " + delta0);
@@ -55,7 +55,7 @@ Console.WriteLine($"d0 = " + delta0);
 matrix[0, 0] = b1;
 matrix[1, 0] = b2;
 
-int delta1 = DeltaMatrix(matrix);
+double delta1 = DeltaMatrix(matrix);
 PrintArray(matrix);
 Console.WriteLine($"d1 = " + delta1);
 
@@ -64,7 +64,7 @@ matrix[1, 0] = - k2;
 matrix[0, 1] = b1;
 matrix[1, 1] = b2;
 
-int delta2 = DeltaMatrix(matrix);
+double delta2 = DeltaMatrix(matrix);
 PrintArray(matrix);
 Console.WriteLine($"d2 = " + delta2);
 
